@@ -12,10 +12,12 @@ interface FallingFruitProps {
 export function FallingFruit({ type, delay, startX, duration, onEat }: FallingFruitProps) {
   const [isEaten, setIsEaten] = useState(false);
 
+  const test = ""
   const fruitPoints = {
     cherry: 100,
     apple: 300,
     orange: 500,
+
   };
 
   const handleEat = () => {
