@@ -221,7 +221,7 @@ export function MyEcommerceGame({ onGameStart, onGameEnd, isActiveCabinet, onSco
                             state.score += 1000;
                             state.specialCaught = true;
                             createExplosion(item.x, item.y, COLOR_SPECIAL);
-                            window.open('https://drmeliha.com', '_blank');
+                            window.open('https://bonyankala.com', '_blank');
                         } else {
                             const points = item.type === 'BAG' ? 50 : 20;
                             state.score += points;
