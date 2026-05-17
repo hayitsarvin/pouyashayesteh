@@ -228,7 +228,7 @@ export function MySpaceInvadersGame({ onGameStart, onGameEnd, isActiveCabinet, o
 
                             // === LINK LOGIC ===
                             if (alien.type === 'charity') {
-                                window.open('https://google.com', '_blank');
+                                window.open('https://atris.poportfolio.com', '_blank');
                             }
                             break;
                         }

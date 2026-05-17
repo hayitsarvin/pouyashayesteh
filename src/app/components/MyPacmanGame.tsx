@@ -241,7 +241,7 @@ export function MyPacmanGame({ onGameStart, onGameEnd, isActiveCabinet, onScoreU
                         state.specialItem.triggered = true; // LOCK IT IMMEDIATELY
                         state.score += 1000;
                         state.specialItem.active = false;
-                        window.open('https://google.com', '_blank');
+                        window.open('https://bonyankala.com', '_blank');
                     }
                 }
 
