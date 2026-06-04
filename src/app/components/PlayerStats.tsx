@@ -52,7 +52,7 @@ export function PlayerStats() {
 
         {/* Decorative Ghosts and Fruits - Top Right */}
         <motion.div
-          className="absolute top-[22%] right-[10%] flex gap-4"
+          className="absolute top-[22%] right-[10%] flex gap-4 z-[10]"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         >

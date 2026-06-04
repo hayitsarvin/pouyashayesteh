@@ -114,7 +114,8 @@ const MobileGameControls = ({
           />
           <TouchBtn
             label="🔫"
-            onDown={() => { fireKey(' ', 'keydown'); fireKey(' ', 'keyup'); }}
+            onDown={() => { fireKey(' ', 'keydown'); }}
+            onUp={() =>{ fireKey(' ', 'keyup')}}
             className={btnAccent}
           />
           <TouchBtn
