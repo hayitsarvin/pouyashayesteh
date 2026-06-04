@@ -27,7 +27,7 @@ export function PacmanCursor({ visible = true }: { visible?: boolean }) {
 
   return (
     <motion.div
-      className="fixed pointer-events-none z-[100]"
+      className="fixed pointer-events-none z-[100] hidden md:block"
       style={{
         left: position.x - 20,
         top: position.y - 20,
