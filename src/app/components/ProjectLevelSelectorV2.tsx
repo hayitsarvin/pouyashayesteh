@@ -255,7 +255,15 @@ const ArcadeCabinet = ({
           <div className="bg-[#080808] rounded-lg p-1 shadow-[inset_0_0_10px_#000] border border-gray-900">
             <div className="relative aspect-[4/3] bg-black rounded overflow-hidden shadow-[inset_0_0_15px_#000]">
               <div className={`w-full h-full relative flex flex-col transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-50 grayscale'}`}>
-                <div className="w-full h-full bg-white text-black p-0 overflow-hidden flex flex-col select-none relative">
+                <div className="w-full h-full bg-white text-black p-0 overflow-hidden flex flex-col select-none relative"style={{ touchAction: 'none' }}
+  onPointerDown={() => {
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      key: ' ', code: 'Space', bubbles: true
+    }));
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      key: 'Enter', code: 'Enter', bubbles: true
+    }));
+  }} >
                   {project.id === 'fintech' && (
                     <MyPacmanGame onGameStart={onGameStart} onGameEnd={onGameEnd} isActiveCabinet={isActive} onScoreUpdate={onScoreUpdate} />
                   )}

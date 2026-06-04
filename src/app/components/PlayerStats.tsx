@@ -201,7 +201,7 @@ export function PlayerStats() {
                 POWER-UPS / SKILLS
               </h3>
               
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {skills.map((skill, index) => (
                   <div key={skill.name} className="flex items-center gap-3">
                     {/* Skill Icon - Now on the left */}
