@@ -2,3 +2,6 @@
 @import './tailwind.css';
 @import './theme.css';
 @import './pixel.css';
+.icon{
+    background-color: blue !important;
+}
